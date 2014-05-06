@@ -12,6 +12,10 @@ RUN dpkg -i /tmp/ruby2.0_2.0.0-p451_amd64.deb
 RUN apt-get -y install git libpq-dev libsqlite3-dev nodejs imagemagick
 RUN gem install bundler --no-rdoc --no-ri
 
+## cleanup to reduce images size
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 ## hack so docker can cache bundle if Gemfile has not changed
 WORKDIR /tmp 
 ADD ./Gemfile Gemfile
