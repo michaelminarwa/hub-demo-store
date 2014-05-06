@@ -16,4 +16,9 @@
 /tmp
 
 /.DS_Store
-/public/
+
+## exclude everything in public except our demo images
+/public/*
+!/public/spree
+!/public/spree/*
+
