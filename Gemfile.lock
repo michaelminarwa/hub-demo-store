@@ -1,16 +1,16 @@
 GIT
   remote: git://github.com/spree/hub_gem.git
-  revision: c3ba88008a7906b4152849c655d732f989daa1a0
-  branch: 2-2-stable
+  revision: 5a96cea9dc4b594a5401e84a4dec1dadb23ae1d8
+  branch: new_product
   specs:
-    spree_hub (2.3.0.beta)
+    spree_hub (2.2.0)
       active_model_serializers (= 0.9.0.alpha1)
       httparty
       spree_core
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 076ccaaf8f112466deb594143d58887e6470fb6b
+  revision: 246c06619daaddc3fc106847e6b156637ade3885
   branch: 2-2-stable
   specs:
     spree (2.2.2.beta)
@@ -40,6 +40,7 @@ GIT
       cancan (~> 1.6.10)
       deface (~> 1.0.0)
       ffaker (~> 1.16)
+      font-awesome-rails (~> 4.0)
       friendly_id (= 5.0.3)
       highline (~> 1.6.18)
       httparty (~> 0.11)
@@ -64,7 +65,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
-  revision: e75c1f021c4353b2e10474dfb9181dc8d4571b40
+  revision: f901dc03fa95a0594fda63b7383a49164270bb48
   branch: 2-2-stable
   specs:
     spree_auth_devise (2.2.0)
@@ -118,7 +119,7 @@ GEM
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
     arel (4.0.2)
-    awesome_nested_set (3.0.0.rc.3)
+    awesome_nested_set (3.0.0.rc.4)
       activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
       json (~> 1.4)
@@ -164,6 +165,8 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffaker (1.24.0)
+    font-awesome-rails (4.0.3.2)
+      railties (>= 3.2, < 5.0)
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
@@ -198,7 +201,7 @@ GEM
       money (~> 6.1.0.beta1)
     money (6.1.1)
       i18n (~> 0.6.4)
-    multi_json (1.9.3)
+    multi_json (1.10.0)
     multi_xml (0.5.5)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
