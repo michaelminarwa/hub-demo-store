@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/spree/hub_gem.git
-  revision: 5a96cea9dc4b594a5401e84a4dec1dadb23ae1d8
+  revision: dd53b3d53e89335ab16dbc9c32e1773a2adc1f89
   branch: new_product
   specs:
     spree_hub (2.2.0)
