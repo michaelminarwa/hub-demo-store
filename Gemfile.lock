@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/spree/hub_gem.git
-  revision: bde5d6afc7b4380123654cef1e5f28bc070bf2bb
-  branch: new_product
+  revision: 477107203c4f9de7dc27a2a2a0ff0824ba592588
+  branch: 2-2-stable
   specs:
     spree_hub (2.2.0)
       active_model_serializers (= 0.9.0.alpha1)
