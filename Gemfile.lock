@@ -90,7 +90,7 @@ GEM
       rack-test (~> 0.6.2)
     active_model_serializers (0.9.0.alpha1)
       activemodel (>= 3.2)
-    active_utils (2.0.2)
+    active_utils (2.1.0)
       activesupport (>= 2.3.11)
       i18n
     activemerchant (1.42.9)
