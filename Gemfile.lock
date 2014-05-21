@@ -1,14 +1,4 @@
 GIT
-  remote: git://github.com/spree/hub_gem.git
-  revision: e4245cec1a06719da0b7db2b6316d0b1a051a183
-  branch: sales_demo
-  specs:
-    spree_hub (2.2.0)
-      active_model_serializers (= 0.9.0.alpha1)
-      httparty
-      spree_core
-
-GIT
   remote: git://github.com/spree/spree.git
   revision: 246c06619daaddc3fc106847e6b156637ade3885
   branch: 2-2-stable
@@ -75,6 +65,16 @@ GIT
       json
       multi_json
       spree_core (~> 2.2.0)
+
+GIT
+  remote: git@github.com:spree/spree_wombat.git
+  revision: 9780c5c1db93449b6ac1959abfa8705b35dacd9b
+  branch: 2-2-stable
+  specs:
+    spree_wombat (2.2.0)
+      active_model_serializers (= 0.9.0.alpha1)
+      httparty
+      spree_core
 
 GEM
   remote: https://rubygems.org/
@@ -324,7 +324,7 @@ DEPENDENCIES
   sdoc
   spree!
   spree_auth_devise!
-  spree_hub!
+  spree_wombat!
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)

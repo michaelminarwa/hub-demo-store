@@ -13,8 +13,8 @@ end
 
 Spree.user_class = "Spree::User"
 
-Spree::Hub::Config[:hub_store_id] = ENV["HUB_STORE_ID"]
-Spree::Hub::Config[:hub_token] = ENV["HUB_TOKEN"]
-Spree::Hub::Config[:enable_push] = true
-Spree::Hub::Config[:enable_auto_push] = true
-Spree::Hub::Config[:hub_push_uri] = "https://push.wombat.co"
+# Spree::Hub::Config[:hub_store_id] = ENV["HUB_STORE_ID"]
+# Spree::Hub::Config[:hub_token] = ENV["HUB_TOKEN"]
+# Spree::Hub::Config[:enable_push] = true
+# Spree::Hub::Config[:enable_auto_push] = true
+# Spree::Hub::Config[:hub_push_uri] = "https://push.wombat.co"
