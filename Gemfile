@@ -45,3 +45,4 @@ gem 'spree_wombat', git: 'git@github.com:spree/spree_wombat.git', branch: '2-2-s
 
 gem 'unicorn'
 gem 'foreman'
+gem 'rufus-scheduler'
