@@ -1,15 +1,15 @@
 FROM ubuntu:12.04
 MAINTAINER Ric Lister, ric@spreecommerce.com
 
-RUN apt-get update
-RUN apt-get -y install build-essential zlib1g-dev libreadline6-dev libyaml-dev libssl-dev
-
 ## grab a nice friendly ruby package
 ADD https://33a6871815e79f57702b-41c4a87573b0a371a9ac50d3802e995d.ssl.cf2.rackcdn.com/ruby2.0_2.0.0-p451_amd64.deb /tmp/
 RUN dpkg -i /tmp/ruby2.0_2.0.0-p451_amd64.deb
 
-## deps for bundle
-RUN apt-get -y install git libpq-dev libsqlite3-dev nodejs imagemagick
+## deps for build, then deps for bundle
+RUN apt-get update && apt-get install -y \
+    build-essential zlib1g-dev libreadline6-dev libyaml-dev libssl-dev \
+    git libpq-dev libsqlite3-dev nodejs imagemagick
+
 RUN gem install bundler --no-rdoc --no-ri
 
 ## cleanup to reduce images size
