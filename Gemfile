@@ -41,7 +41,7 @@ end
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-2-stable'
 
-gem 'spree_wombat', git: 'git@github.com:spree/spree_wombat.git', branch: '2-2-stable'
+gem 'spree_wombat', github: 'spree/spree_wombat', branch: '2-2-stable'
 
 gem 'unicorn'
 gem 'foreman'
