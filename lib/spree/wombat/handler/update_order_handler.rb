@@ -1,5 +1,5 @@
 module Spree
-  module Hub
+  module Wombat
     module Handler
       class UpdateOrderHandler < Base
 
