@@ -17,14 +17,16 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ## hack so docker can cache bundle if Gemfile has not changed
-WORKDIR /tmp 
-ADD ./Gemfile Gemfile
-ADD ./Gemfile.lock Gemfile.lock
+WORKDIR /app
+ADD ./Gemfile /app/
+ADD ./Gemfile.lock /app/
 RUN bundle install 
 
 ## deploy code to /app
 ADD ./ /app
-WORKDIR /app
+
+## TODO: figure out how to do this without busting cache
+RUN bundle exec rake assets:precompile --trace
 
 ## setup script for initial seeding database
 ## run this with docker run hub-demo ./setup.sh
