@@ -4,7 +4,7 @@ Spree::Wombat::Config.configure do |config|
 
   config.push_objects = ["Spree::Order", "Spree::Shipment"]
   config.payload_builder = {
-    "Spree::Order"    => {serializer: 'DemoOrderSerializer', root: 'orders', filter: 'complete' },
-    "Spree::Shipment" => {serializer: 'Spree::Wombat::ShipmentSerializer', root: 'shipments' }
+    "Spree::Order"    => {serializer: 'Spree::Wombat::OrderSerializer', root: 'orders', filter: 'complete' },
+    "Spree::Shipment" => {serializer: 'DemoShipmentSerializer', root: 'shipments' }
   }
 end
