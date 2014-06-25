@@ -68,7 +68,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_wombat.git
-  revision: 4ff4886df5803ab563b329826cb0a261bbd254ff
+  revision: e7a6ed63982fe5a4786bdabdf7886c62bbfb3ae2
   branch: 2-2-stable
   specs:
     spree_wombat (2.2.0)
